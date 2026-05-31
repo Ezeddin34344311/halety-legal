@@ -41,6 +41,16 @@ img { max-width: 100%; display: block; }
 a { color: var(--brand); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
+/* English titles use Domine (serif); Arabic titles stay on Tajawal */
+h1, h2, h3 {
+  font-family: "Domine", Georgia, "Times New Roman", serif;
+}
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3 {
+  font-family: "Tajawal", "Segoe UI", Tahoma, Arial, sans-serif;
+}
+
 /* ----------------------------------------------------------- Site header */
 .site-header {
   position: sticky;
