@@ -4,10 +4,10 @@
    ========================================================================== */
 
 :root {
-  --brand:        #7c3aed;   /* violet 600 */
-  --brand-dark:   #5b21b6;   /* violet 800 */
-  --brand-light:  #ede9fe;   /* violet 100 */
-  --accent:       #ec4899;   /* pink 500  */
+  --brand:        #4457ED;   /* Halety blue   */
+  --brand-dark:   #2c3bbf;   /* deep blue     */
+  --brand-light:  #e9ecff;   /* light tint    */
+  --accent:       #7c8bff;   /* lighter blue  */
   --ink:          #1f2233;   /* headings  */
   --body:         #3f4257;   /* body text */
   --muted:        #6b7280;   /* secondary */
@@ -26,7 +26,7 @@ html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
 
 body {
   margin: 0;
-  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial,
+  font-family: "Roboto", "Segoe UI", "Helvetica Neue", Arial,
                "Apple Color Emoji", "Segoe UI Emoji", sans-serif;
   color: var(--body);
   background: var(--bg);
@@ -64,25 +64,13 @@ a:hover { text-decoration: underline; }
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  font-weight: 800;
-  font-size: 1.25rem;
-  color: var(--ink);
-  letter-spacing: -0.02em;
 }
 .brand:hover { text-decoration: none; }
 
 .brand .logo {
-  width: 36px;
-  height: 36px;
-  border-radius: 11px;
-  background: linear-gradient(135deg, var(--brand), var(--accent));
-  color: #fff;
-  display: grid;
-  place-items: center;
-  font-size: 1.05rem;
-  font-weight: 800;
-  box-shadow: var(--shadow-sm);
+  height: 34px;
+  width: auto;
+  display: block;
 }
 
 .nav {
@@ -102,11 +90,17 @@ a:hover { text-decoration: underline; }
 /* ------------------------------------------------------------------- Hero */
 .hero {
   background:
-    radial-gradient(1200px 400px at 80% -10%, rgba(236, 72, 153, 0.18), transparent 60%),
+    radial-gradient(1200px 400px at 80% -10%, rgba(124, 139, 255, 0.35), transparent 60%),
     linear-gradient(135deg, var(--brand-dark), var(--brand));
   color: #fff;
   text-align: center;
   padding: 84px 20px 96px;
+}
+.hero .hero-logo {
+  height: 52px;
+  width: auto;
+  margin: 0 auto 26px;
+  display: block;
 }
 .hero h1 {
   margin: 0 0 14px;
@@ -260,7 +254,7 @@ a:hover { text-decoration: underline; }
 [dir="rtl"] {
   direction: rtl;
   text-align: right;
-  font-family: "Segoe UI", Tahoma, "Geeza Pro", "Arial", sans-serif;
+  font-family: "Tajawal", "Segoe UI", Tahoma, "Geeza Pro", Arial, sans-serif;
 }
 [dir="rtl"] .doc-head { text-align: center; }
 [dir="rtl"] .doc ul { padding-inline-start: 22px; }
